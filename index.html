@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Menu</title>
+  </head>
+  <body data-spy="scroll" data-bs-target="#list-example" data-offset="70">
+    
+    <section class="nav_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-xs-6 col-sm-5">
+                    <img width="200px" class="logo-image" src="/image/logo/image.webp"/>
+                </div>
+                <div class="col-md-8 col-xs-6 col-sm-7 mobile-fiex">
+                    <div class="search-box">
+                        <button class="btn-search"><i class="bi bi-search"></i></button>
+                        <input type="text" class="input-search search-input" placeholder="Type to Search...">
+                    </div>
+                    <ul class="signbtn">
+                        <li><a href=#><i class="bi bi-person-plus-fill"></i> Sign In / Register</a></li>
+                    </ul>
+                    <br><br>
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <button id="sidebarCollapse" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-sidebar">
+                            <div id="dismiss">
+                                <i class="bi bi-x-lg"></i>
+                                </div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link activenav">Menu</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Book a Table</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                </div>
+        </div>
+        </div>
+    </section>
+     <section class="main-section ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 also-mobilemenu" style="padding-right: 0px;">
+                    <div class="card card-body sticky-top">  
+                        <h1 class="menuCatagory ">Menu Categories</h1>
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action active" href="#list-item-1">Traditional Starters</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-2">Chatt Massala Starters</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Puri Starters</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-4">Tandoori Starters</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="items-menu  sticky-top">
+                    <div class="row">    
+                    <div class="col-md-12">
+                            <div id="list-item-1" class="card card-body sticky-top">
+                                <h1 class="menuCatagory"  data-target="#collapseOne" aria-expanded="false" >Traditional Starters</h1>
+                            </div>
+                            <div class="container-fluid" id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                                <div class="row all-food">
+                                    <div class="col-md-7">
+                                        <div class="food-details">
+                                        <h3>Samosa</h3>
+                                        <p>Savoury Pastry Filled With Lightly Spiced Minced Lamb . Made In House</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="option-items" id="pro-1">
+                                            <h6 class="name">Meat</h6>
+                                            <p >£<span class="price">20</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-1 .name').innerHTML),Number(document.querySelector('#pro-1 .price').innerHTML))">+</button>
+                                        </div>
+                                        <div class="option-items" id="pro-2">
+                                            <h6 class="name">Vagitable</h6>
+                                            <p >£<span class="price">10</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-2 .name').innerHTML),Number(document.querySelector('#pro-2 .price').innerHTML))">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row all-food">
+                                    <div class="col-md-7">
+                                        <div class="food-details">
+                                        <h3>Onion Bhajee</h3>
+                                        <p>Everyone’s Favourite, Thinly Cut Onions Mixed With Herbs And Spices</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="option-items" id="pro-3">
+                                            <h6 class="name">Girlle</h6>
+                                            <p >£<span class="price">20</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-3 .name').innerHTML),Number(document.querySelector('#pro-3 .price').innerHTML))">+</button>
+                                        </div>
+                                        <div class="option-items" id="pro-7">
+                                            <h6 class="name">Salat/cuum</h6>
+                                            <p >£<span class="price">50</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-7 .name').innerHTML),Number(document.querySelector('#pro-5 .price').innerHTML))">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row all-food">
+                                    <div class="col-md-7">
+                                        <div class="food-details">
+                                        <h3>Soup</h3>
+                                        <p>Home Made Lentil</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="option-items" id="pro-4">
+                                            <h6 class="name">Lentil</h6>
+                                            <p >£<span class="price">30</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-4 .name').innerHTML),Number(document.querySelector('#pro-4 .price').innerHTML))">+</button>
+                                        </div>
+                                        <div class="option-items" id="pro-5">
+                                            <h6 class="name">Mulligatawny</h6>
+                                            <p >£<span class="price">50</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-5 .name').innerHTML),Number(document.querySelector('#pro-5 .price').innerHTML))">+</button>
+                                        </div>
+                                        <div class="option-items" id="pro-6">
+                                            <h6 class="name">Tikka</h6>
+                                            <p >£<span class="price">20</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-6 .name').innerHTML),Number(document.querySelector('#pro-6 .price').innerHTML))">+</button>
+                                        </div>
+                                        
+                                        <div class="option-items" id="pro-8">
+                                            <h6 class="name">Borhani</h6>
+                                            <p >£<span class="price">50</span></p>
+                                            <button class="button" onclick="addToCart((document.querySelector('#pro-8 .name').innerHTML),Number(document.querySelector('#pro-8 .price').innerHTML))">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">     
+                        <div class="col-md-12">
+                        
+                            <div id="list-item-2" class="card card-body sticky-top">
+                                <h1 class="menuCatagory" data-target="#collapseTwo" aria-expanded="false">Chatt Massala Starters</h1>
+                            </div>
+                              <div class="container-fluid" id="collapseTwo" class="collapse show" aria-labelledby="headingTwo">
+                                <div class="row all-food">
+                                    <div class="col-md-12">
+                                        <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics,
+                                            raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation.
+                                            Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+                                
+                                        <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
+                                                readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+                                                forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+                                                
+                                                
+                                            <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
+                                                readymade disrupt deep PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown g v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+                                                forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+                                    </div>
+                                </div>
+                              </div>
+                           
+                    
+                        </div>
+                    </div>
+                    <div class="row">     
+                        <div class="col-md">
+                        
+                            <div id="list-item-3" class="card card-body sticky-top">
+                                <h1 class="menuCatagory"  data-target="#collapseThree" aria-expanded="false">Puri Starters</h1>
+                            </div>
+                            <div class="container-fluid" id="collapseThree" class="collapse show" aria-labelledby="headingOne">
+                                <div class="row all-food">
+                                     <div class="col-md-12">
+                                        <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics,
+                                            raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation.
+                                            Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+                                
+                                        <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
+                                                readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+                                                forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+                                                
+                                                
+                                            <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
+                                                readymade disrupt deep PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown g v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+                                                forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+                                     </div>
+                                </div>
+                            </div>
+                            
+                    
+                           
+                    
+                        </div>
+                    </div>
+                    <div class="row">     
+                        <div class="col-md">
+                            <div id="list-item-4" class="card card-body sticky-top">
+                                <h1 class="menuCatagory"   data-target="#collapseFour" aria-expanded="false">Tandoori Starters</h1>
+                            </div>
+                            <div class="container-fluid" id="collapseFour" class="collapse show" aria-labelledby="headingFour">
+                                <div class="row all-food">
+                                     <div class="col-md-12">
+                                        <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote bag. Tote bag cronut semiotics,
+                                            raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh synth chillwave meditation.
+                                            Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p>
+                                
+                                        <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
+                                                readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+                                                forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+                                                
+                                                
+                                            <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb
+                                                readymade disrupt deep PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown g v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies,
+                                                forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
+                                     </div>
+                                </div>
+                            </div>
+                    
+                            
+                    
+                        </div>
+                    </div>
+                    
+                </div>           
+                        
+                
+                </div>
+                <div class="col-lg-3 also-cart-mobile" style="padding-left: 0px">
+                    <div class="card card-body sticky-top">  
+                        <h1 class="menuCatagory ">Your Order</h1>
+                        <div  class="cart-items">
+                            <div class="navs-tabs">
+                                <div class="demo">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs nav-justified nav-tabs-dropdown" role="tablist">
+                                            <li class="nav-item" role="presentation" ><a class="active" href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                                <p><i class="bi bi-bicycle"></i></p>
+                                                <p>Delivery</p> 
+                                                <p>From<time>8:15</time></p>
+                                            </a></li>
+                                            <li role="presentation" class="nav-item"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                                <p><i class="bi bi-lock-fill"></i></p>
+                                                <p>Collection</p> 
+                                                <p>From<time>8:15</time></p>
+                                            </a></li>
+                                          
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="home">
+                                               <ul>
+                                                <li><i style="color:#f9ac2c" class="bi bi-geo-alt-fill"></i></li>
+                                                <li style="font-size: 14px;">Delivery From £2.00 .</li>
+                                                <li  style="font-size: 12px;">Min. Order £15.00</li>
+                                                <li data-toggle="tooltip" data-placement="top" title="Delivery Charges:
+                                                Up to 4 miles £2"><i class="bi bi-info"></i></li>
+                                               </ul>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="profile">
+                                                <ul>
+                                                    <li><i style="color:#f9ac2c" class="bi bi-geo-alt-fill"></i></li>
+                                                    <li style="font-size: 16px;">Delivery From £2.00 .</li>
+                                                    <li  style="font-size: 12px;">Min. Order £5.00</li>
+                                                    <li data-toggle="tooltip" data-placement="top" title="Delivery Charges:
+                                                    Up to 4 miles £2"><i class="bi bi-info"></i></li>
+                                                   </ul>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cart-insert" id="cart-items">
+                                 
+                            </div>
+                            
+                            <div class="subtotal-price">
+                                <ul>
+                                    <li>Sub Total</li>
+                                    <li id="cart-total" style="font-size: 16px;font-weight: bold;">£0</li>
+                                </ul>
+                            </div>
+                            <br><br>
+                            <div class="subtotal-price">
+                                <ul>
+                                    <li style="font-size: 12px;">Service Charge </li>
+                                    <li>£<span id="ser-total">1.2</span></li>
+                                </ul>
+                            </div>
+                            <br><br>
+                            <div class="subtotal-price">
+                                <ul>
+                                    <li style="font-size: 20px;">Total </li>
+                                    <li style="font-size: 20px;font-weight: bold;" id="cartst-total">£1.2</li>
+                                </ul>
+                            </div>
+                            <br><br>
+                           <div class="checkout">
+                             <button class="btn btn-block">
+                                Checkout
+                             </button>
+                           </div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+    </div>
+    </section>
+
+    
+    <div class="mainCatgory-mobile">
+       <p><i class="bi bi-menu-button"></i></p>
+    </div>
+    <div class="cart-mobile">
+         <p><i class="bi bi-bag-plus"></i>(<span style="font-size: 12px;font-weight: bold;" id="mobile-total">£1.2</span>)</p>
+         
+    </div>
+    <footer>
+        <section class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12 left-logo">
+                        <div class="payment">
+                            <img src="/image/payment/visa-card-logo.svg"/>&nbsp;&nbsp;&nbsp;
+                            <img src="/image/payment/mastercard-logo.svg"/>
+                        </div>
+                        <br> <br>
+                        <div class="payment">
+                            <p style="color:#fff">Powered By </p>
+                            <img src="/image/payment/image.webp">
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-4  col-xs-12 s-link">
+                            <p>E-COMMERCE</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                  Home
+                                </a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                Contact
+                                </a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                Menu
+                                </a></li> 
+                            </ul>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-4  col-xs-12 s-link">
+                       
+                            <p>PONTO DE RETIRADA</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                    Book a Table
+                                </a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                    Reviews
+                                </a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                    Terms of Use
+                                </a></li> 
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                    Cookies
+                                </a></li> 
+                            </ul>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-4  col-xs-12 s-link">
+                        <p>PONTO DE RETIRADA</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                    FAQ's
+                                </a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                Blog
+                                </a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                    Allergy
+                                </a></li> 
+                                <li><a href="#"><i class="fa fa-angle-right"></i>
+                                    Privacy Policy
+                                </a></li>
+                                
+                            </ul>
+                        
+                    </div>
+                   
+                </div>
+                 <div class="copyright">
+                        <p>Copyright © Kukd.com (UK) Ltd 2023 - All Rights Reserved</p>
+                        <p>*Please note all images used on this website are for illustration purposes only. Kukd.com (UK) Ltd is NOT the owner or operator of this business.</p>
+                    </div>
+            </div>
+        </section>
+    </footer>
+    <a href="#top" id="js-top"><i class="bi bi-chevron-up"></i></a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/nabs.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
